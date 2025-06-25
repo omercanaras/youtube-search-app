@@ -1,0 +1,21 @@
+<div class="col-sm-6 col-md-4 mb-3">
+  <div class="card h-100">
+    <img
+      [src]="result.thumbnailUrl"
+      class="card-img-top"
+      alt="Thumbnail of {{ result.title }}"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ result.title }}</h5>
+      <p class="card-text">{{ result.description }}</p>
+      <a
+        [href]="result.videoUrl"
+        target="_blank"
+        class="btn btn-primary"
+        role="button"
+      >
+        Watch
+      </a>
+    </div>
+  </div>
+</div>
